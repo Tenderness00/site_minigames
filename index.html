@@ -16,9 +16,27 @@
             <div class="top">
                 <h1 class="title">Добро пожаловать на мой сайт мини-игр</h1>
                 <p class="tagline">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span class="span">«Поехали!»</span> и <span class="span">приступай</span>.</p>
-                <section><a href="#games.html"><button class="button_main" >Поехали!</button></a></section> 
+                <nav>
+                    <a href="#games.html"><button class="button_main" >Поехали!</button></a>
+                    <a href="#games_button"></a>
+                </nav>
             </div>
     </header>
+    <div class="stripe">
+        <p class="stripe__text">ВИКТОРИНА</p>
+        <img class="stripe__text" src="img/Star.svg" alt="star">
+        <div class="stripe__text">УГАДАЙ ЧИСЛО</div>
+        <img class="stripe__text" src="img/Star.svg" alt="star">
+        <p class="stripe__text">ПЕРЕВЕРНИ ТЕКСТ</p>
+        <img class="stripe__text" src="img/Star.svg" alt="star">
+        <p class="stripe__text">ПРОСТАЯ АРИФМЕТИКА</p>
+        <img class="stripe__text" src="img/Star.svg" alt="star">
+        <p class="stripe__text">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</p>
+        <img class="stripe__text" src="img/Star.svg" alt="star">
+        <p class="stripe__text">ГЕНЕРАТОР СЛУЧАЙНЫХ ЧИСЕЛ</p>
+        <img class="stripe__text" src="img/Star.svg" alt="star">
+        
+    </div>
     <main class="main_games center">
         <div class="container">
             <div class="content">
@@ -80,17 +98,17 @@
     </main>
    <section class="mini-game center">
     <div class="mini-game_box">
-        <p class="mini-game_box-title">Мини-игры</p>
+        <p id="games_button" class="mini-game_box-title">Мини-игры</p>
         <div class="game-container">
             <div class="game-content" id="cart1">
                 <p class="game-content_title">Угадай число</p>
                 <p class="game-content_text">Попробуй угадать случайное число от 1 до 100.</p>
                 <button class="game_button">Играть!</button>
             </div>
-            <img src="img/bigcover1.svg" alt="bigcover1">
+            <img class="game__img" src="img/bigcover1.svg" alt="bigcover1">
         </div>
-        <div class="game-container">
-            <img src="img/bigcover2.svg" alt="bigcover2">
+        <div class="game-container__bottom">
+            <img class="game__img" src="img/bigcover2.svg" alt="bigcover2">
             <div class="game-content" id="cart2">
                 <p class="game-content_title">Простая арифметика</p>
                 <p class="game-content_text">Попробуй решить простые арифметические задачи.</p>
@@ -103,10 +121,10 @@
                 <p class="game-content_text">Попробуй ввести текст, который будет перевернут.</p>
                 <button class="game_button">Играть!</button>
             </div>
-            <img src="img/bigcover3.svg" alt="bigcover3">
+            <img class="game__img" src="img/bigcover3.svg" alt="bigcover3">
         </div>
-        <div class="game-container">
-            <img src="img/bigcover4.svg" alt="bigcover4">
+        <div class="game-container__bottom">
+            <img class="game__img" src="img/bigcover4.svg" alt="bigcover4">
             <div class="game-content" id="cart5">
                 <p class="game-content_title">Викторина</p>
                 <p class="game-content_text">Отвечай на вопросы викторины с вариантами ответов.</p>
@@ -119,10 +137,10 @@
                 <p class="game-content_text">Сыграй в популярную игру против компьютера.</p>
                 <button class="game_button">Играть!</button>
             </div>
-            <img src="img/bigcover5.svg" alt="bigcover5">
+            <img class="game__img" src="img/bigcover5.svg" alt="bigcover5">
         </div>
-        <div class="game-container">
-            <img src="img/bigcover6.svg" alt="bigcover6">
+        <div class="game-container__bottom">
+            <img class="game__img" src="img/bigcover6.svg" alt="bigcover6">
             <div class="game-content" id="cart6">
                 <p class="game-content_title">Генератор случайных цветов</p>
                 <p class="game-content_text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
