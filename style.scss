@@ -4,7 +4,6 @@
 }
 
 body {
-    // overflow-x: hidden;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -17,7 +16,6 @@ body {
     background-size: cover;
     background-position: center;
     height: 800px;
-    // width: 100%;
 }
 
 .top {
@@ -55,6 +53,18 @@ body {
     text-align: left;
     margin-top: 24px;
     margin-bottom: 48px;
+
+    &__games {
+        text-align: left;
+        color: #FFFFFF;
+        width: 788px;
+        height: 96px;
+        font-family: Montserrat;
+        font-size: 24px;
+        line-height: 32px;
+        padding-bottom: 72px;
+        margin-top: 24px;
+    }
 }
 
 .span {
@@ -93,8 +103,6 @@ body {
     gap: 48px;
     background-image: url(img/Group2.svg);
     background-repeat: no-repeat;
-    // width: 1201px;
-    // padding-left: 120px;
 }
 
 .games_title {
@@ -102,22 +110,9 @@ body {
     font-size: 64px;
     font-weight: 700;
     line-height: 78.02px;
-    // text-align: left;
     color: #FFFFFF;
     padding-top: 94px;
 
-}
-
-.tagline_games {
-    text-align: left;
-    color: #FFFFFF;
-    width: 788px;
-    height: 96px;
-    font-family: Montserrat;
-    font-size: 24px;
-    line-height: 32px;
-    padding-bottom: 72px;
-    margin-top: 24px;
 }
 
 .content {
@@ -127,7 +122,6 @@ body {
 
 .container {
     width: auto;
-    // margin-bottom: 72px;
 }
 
 .cart-box {
@@ -257,6 +251,22 @@ body {
     background: #202027;
     background-image: url(img/Group3.svg);
     background-repeat: no-repeat;
+
+    &__box-title {
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78.02px;
+        text-align: left;
+        color: #FFFFFF;
+        padding-top: 96px;
+        margin-bottom: 72px;
+        padding-left: 120px;
+    }
+
+    &__box {
+        padding-bottom: 112px;
+    }
 }
 
 .game-container {
@@ -290,42 +300,26 @@ body {
 .game-content {
     width: 600px;
     margin: 48px;
-}
 
-.mini-game_box {
-    padding-bottom: 112px;
-}
+    &__title {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58.51px;
+        text-align: left;
+        color: #202027;
+    }
 
-.mini-game_box-title {
-    font-family: Montserrat;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 78.02px;
-    text-align: left;
-    color: #FFFFFF;
-    padding-top: 96px;
-    margin-bottom: 72px;
-    padding-left: 120px;
-}
-
-.game-content_title {
-    font-family: Montserrat;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 58.51px;
-    text-align: left;
-    color: #202027;
-}
-
-.game-content_text {
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-    color: #202027;
-    margin-top: 24px;
-    margin-bottom: 36px;
+    &__text {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        color: #202027;
+        margin-top: 24px;
+        margin-bottom: 36px;
+    }
 }
 
 .game_button {
@@ -351,64 +345,17 @@ body {
     top: 5770px;
     gap: 0px;
     opacity: 0px;
-    /* padding-top: 61px; */
-
+    
+    &__text {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29.26px;
+        text-align: center;
+        color: #000000;
+        padding: 61px 0px;
+    }
 }
-
-.footer_text {
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 29.26px;
-    text-align: center;
-    color: #000000;
-    padding: 61px 0px;
-}
-
-// .stripe {
-//     display: flex;
-//     overflow-x: hidden;
-//     position: relative;
-//     flex-direction: row;
-//     width: 100%;
-//     background: #BCEC30;
-
-//     &__text {
-//         font-family: Montserrat;
-//         font-size: 30px;
-//         animation: marquee 10s infinite linear;
-//         animation-delay: -10s;
-//         font-size: sans-serif;
-//         padding: 24px;
-//         white-space: nowrap;
-//         display: inline-block;
-//         font-weight: 700;
-//         line-height: 33px;
-//         letter-spacing: 0.04em;
-//         text-align: left;
-//         text-decoration-skip-ink: none;
-//         width: 100%;
-//     }
-
-// }
-
-// @keyframes marquee1 {
-//     0% {
-//         transform: translateX(-100%);
-//     }
-//     100% {
-//         transform: translateX(-50%);
-//     }
-// }
-
-// @keyframes marquee2 {
-//     0% {
-//         transform: translateX(0%);
-//     }
-//     100% {
-//         transform: translateX(-100%);
-//     }
-// }
 
 .stripe {
     display: flex;
