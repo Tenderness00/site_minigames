@@ -4,7 +4,9 @@
 }
 
 body {
-    overflow-x: hidden;
+    // overflow-x: hidden;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .header {
@@ -22,6 +24,12 @@ body {
     width: 769px;
     padding-top: 196px;
     padding-left: 120px;
+}
+
+.game-content__position{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .title {
@@ -85,7 +93,8 @@ body {
     gap: 48px;
     background-image: url(img/Group2.svg);
     background-repeat: no-repeat;
-    // width: 1440px;
+    // width: 1201px;
+    // padding-left: 120px;
 }
 
 .games_title {
@@ -93,9 +102,10 @@ body {
     font-size: 64px;
     font-weight: 700;
     line-height: 78.02px;
-    text-align: left;
+    // text-align: left;
     color: #FFFFFF;
     padding-top: 94px;
+
 }
 
 .tagline_games {
@@ -106,15 +116,18 @@ body {
     font-family: Montserrat;
     font-size: 24px;
     line-height: 32px;
+    padding-bottom: 72px;
+    margin-top: 24px;
 }
 
 .content {
     width: 1201px;
-    height: 198px;
+    padding-left: 120px;
 }
 
 .container {
-    margin-bottom: 72px;
+    width: auto;
+    // margin-bottom: 72px;
 }
 
 .cart-box {
@@ -236,8 +249,8 @@ body {
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
 }
 
 .mini-game {
@@ -292,6 +305,7 @@ body {
     color: #FFFFFF;
     padding-top: 96px;
     margin-bottom: 72px;
+    padding-left: 120px;
 }
 
 .game-content_title {
@@ -351,63 +365,117 @@ body {
     padding: 61px 0px;
 }
 
+// .stripe {
+//     display: flex;
+//     overflow-x: hidden;
+//     position: relative;
+//     flex-direction: row;
+//     width: 100%;
+//     background: #BCEC30;
+
+//     &__text {
+//         font-family: Montserrat;
+//         font-size: 30px;
+//         animation: marquee 10s infinite linear;
+//         animation-delay: -10s;
+//         font-size: sans-serif;
+//         padding: 24px;
+//         white-space: nowrap;
+//         display: inline-block;
+//         font-weight: 700;
+//         line-height: 33px;
+//         letter-spacing: 0.04em;
+//         text-align: left;
+//         text-decoration-skip-ink: none;
+//         width: 100%;
+//     }
+
+// }
+
+// @keyframes marquee1 {
+//     0% {
+//         transform: translateX(-100%);
+//     }
+//     100% {
+//         transform: translateX(-50%);
+//     }
+// }
+
+// @keyframes marquee2 {
+//     0% {
+//         transform: translateX(0%);
+//     }
+//     100% {
+//         transform: translateX(-100%);
+//     }
+// }
+
 .stripe {
     display: flex;
-    overflow-x: hidden;
-    position: relative;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    background: #BCEC30;
+    background-color: #BCEC30;
+    height: 90px;
+    overflow: hidden;
+    position: relative;
 
     &__text {
         font-family: Montserrat;
         font-size: 30px;
-        animation: marquee 10s infinite linear;
-        animation-delay: -10s;
-        font-size: sans-serif;
-        padding: 24px;
+        font-style: sans-serif;
+        padding-top: 24px;
         white-space: nowrap;
-        display: inline-block;
         font-weight: 700;
         line-height: 33px;
         letter-spacing: 0.04em;
-        text-align: left;
+        text-align: center;
         text-decoration-skip-ink: none;
-        width: 100%;
+
+        }
+
+    &__img {
+        width: 36px;
+        height: 36px;
+        padding: 24px;
+        }
+    
+    &__frame {
+        display: flex;
+        width: 148%;
+        height: 90px;
+        position: absolute;
+        overflow: hidden;
+        animation: marquee1 10s infinite linear;
     }
 
-    &__text::after {
-        content: '';
+    &__frame2 {
+        display: flex;
+        width: 148%;
+        height: 90px;
+        position: absolute;
+        overflow: hidden;
+        animation: marquee2 10s infinite linear;
     }
+
+        
+        @keyframes marquee1 {
+            from {
+                transform: translateX(0%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        @keyframes marquee2 {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0%);
+            }
+        }
 }
-
-
-
-@keyframes marquee1 {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-@keyframes marquee2 {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-// @keyframes marqee2 {
-//     0% {
-//         transform: translateX(200%);
-//     }
-//     100% {
-//         transform: translateX(-200%);
-//     }
-// }
 
 
 
