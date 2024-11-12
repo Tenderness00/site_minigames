@@ -331,14 +331,14 @@ body {
   text-align: center;
 }
 
-.footer {
+.botton {
   background: #BDED35;
   height: 150px;
   top: 5770px;
   gap: 0px;
   opacity: 0px;
 }
-.footer__text {
+.botton__text {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
