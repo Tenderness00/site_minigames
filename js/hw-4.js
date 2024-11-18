@@ -104,9 +104,9 @@
 // console.log(circle1.methodgetArea());
 // console.log(circle2. methodgetPerimeter());
 
-function guessTheNumber(number) {
+function guessTheNumber() {
 
-    let secret = number
+    let secret = Math.round(Math.random() * 100)
 
     while (true) {
         let num = Number(prompt('Угадайте число от 1 до 100'))

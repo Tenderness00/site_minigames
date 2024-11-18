@@ -161,18 +161,50 @@
 // game
 
 function simpleArithmetic() {
-    let simpleArithmetic = {
-    '5 + 3': '8',
-    '10 - 2': '8',
-    '4 * 7': '28',
-    '20 / 4': '5'
-    }
+  // function rn() {
+  //   let simpleArithmetic = Math.round(Math.random() * 100);
+  //   // '5 + 3': '8',
+  //   // '10 - 2': '8',
+  //   // '4 * 7': '28',
+  //   // '20 / 4': '5'
+  //   }
 
-    for (let key in simpleArithmetic) {
-        if (prompt(`${key}`) === simpleArithmetic[key]) {
-          alert('Правильный ответ')
-        } else {
-          alert('Не правильный ответ')
-        }
-      }
+  //   const operator = {
+  //     1:Math.random() > 0,5 ? '+' : '-',
+  //     2:'*',
+  //     3:'/',
+  //     4:'%'
+  //   }
+  //   return `${rn()} ${operator[lvl]} ${rn()}`;
+  // }
+  //   for (let key in simpleArithmetic) {
+  //       if (prompt(`${key}`) === simpleArithmetic[key]) {
+  //         alert('Правильный ответ')
+  //       } else {
+  //         alert('Не правильный ответ')
+  //       }
+  let tasks = {
+    '1': '1',
+    '2': '2',
+    '3': '3',
+    '4': '4'
+  }
+  let symbols = ['+', '-', '/', '*']
+
+  for (let key in tasks) {
+    a = Math.round(Math.random() * 10)
+    b = Math.round(Math.random() * 10)
+    tasks[key] = `${a} + ${b}`
+    
+    if (symbols[key - 1] === '+') {
+      key = a + b
+    } else if (symbols[key - 1] === '-') {
+      key = a - b
+    } else if (symbols[key - 1] === '/') {
+      key = Math.round(a / b)
+    } else if (symbols[key -1] === '*') {
+      key = a * b
+    }
+    alert(tasks.keys())
+  }
 }
