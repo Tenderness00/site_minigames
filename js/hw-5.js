@@ -158,53 +158,35 @@
 //    console.log(arr.reduce((a, b) => a+b) / arr.length);
 
 
-// game
+// game +-/*
 
 function simpleArithmetic() {
-  // function rn() {
-  //   let simpleArithmetic = Math.round(Math.random() * 100);
-  //   // '5 + 3': '8',
-  //   // '10 - 2': '8',
-  //   // '4 * 7': '28',
-  //   // '20 / 4': '5'
-  //   }
 
-  //   const operator = {
-  //     1:Math.random() > 0,5 ? '+' : '-',
-  //     2:'*',
-  //     3:'/',
-  //     4:'%'
-  //   }
-  //   return `${rn()} ${operator[lvl]} ${rn()}`;
-  // }
-  //   for (let key in simpleArithmetic) {
-  //       if (prompt(`${key}`) === simpleArithmetic[key]) {
-  //         alert('Правильный ответ')
-  //       } else {
-  //         alert('Не правильный ответ')
-  //       }
-  let tasks = {
-    '1': '1',
-    '2': '2',
-    '3': '3',
-    '4': '4'
-  }
   let symbols = ['+', '-', '/', '*']
 
-  for (let key in tasks) {
+  for (let i = 0; i < 4; i++) {
     a = Math.round(Math.random() * 10)
     b = Math.round(Math.random() * 10)
-    tasks[key] = `${a} + ${b}`
-    
-    if (symbols[key - 1] === '+') {
-      key = a + b
-    } else if (symbols[key - 1] === '-') {
-      key = a - b
-    } else if (symbols[key - 1] === '/') {
-      key = Math.round(a / b)
-    } else if (symbols[key -1] === '*') {
-      key = a * b
+    task = String(`${a} ${symbols[i]} ${b}`)
+
+    result = null
+
+    if (symbols[i] === '+') {
+      result = a + b
+    } else if (symbols[i] === '-') {
+      result = a - b
+    } else if (symbols[i] === '/') {
+      result = a / b
+    } else if (symbols[i] === '*') {
+      result = a * b
     }
-    alert(tasks.keys())
+    
+    answer = Number(prompt(task))
+    if (answer === result) {
+      alert('Правильный ответ')
+    } else {
+      alert('Неправильный ответ')
+    }
   }
+
 }
