@@ -164,20 +164,20 @@ function simpleArithmetic() {
 
   let symbols = ['+', '-', '/', '*']
 
-  for (let i = 0; i < 4; i++) {
     a = Math.round(Math.random() * 10)
     b = Math.round(Math.random() * 10)
-    task = String(`${a} ${symbols[i]} ${b}`)
+    let symbol = Math.floor(Math.random() * 4);
+    task = String(`${a} ${symbols[symbol]} ${b}`)
 
     result = null
 
-    if (symbols[i] === '+') {
+    if (symbols[symbol] === '+') {
       result = a + b
-    } else if (symbols[i] === '-') {
+    } else if (symbols[symbol] === '-') {
       result = a - b
-    } else if (symbols[i] === '/') {
+    } else if (symbols[symbol] === '/') {
       result = a / b
-    } else if (symbols[i] === '*') {
+    } else if (symbols[symbol] === '*') {
       result = a * b
     }
     
@@ -188,5 +188,3 @@ function simpleArithmetic() {
       alert('Неправильный ответ')
     }
   }
-
-}
