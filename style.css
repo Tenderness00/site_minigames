@@ -15,7 +15,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 800px;
+  height: 700px;
 }
 
 .top {
@@ -73,7 +73,7 @@ body {
   font-weight: 600;
 }
 
-.button_main {
+.button__main {
   width: 247px;
   height: 66px;
   padding: 16px 28px;
@@ -89,9 +89,10 @@ body {
   font-weight: 600;
   line-height: 34.01px;
   text-align: center;
+  text-decoration: none;
 }
 
-.button_main:hover {
+.button__main:hover {
   color: black;
   background: #FFFFFF;
   transition: 1s;
@@ -331,14 +332,10 @@ body {
   text-align: center;
 }
 
-.botton {
+.footer {
   background: #BDED35;
-  height: 150px;
-  top: 5770px;
-  gap: 0px;
-  opacity: 0px;
 }
-.botton__text {
+.footer__text {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
@@ -438,7 +435,7 @@ body {
   .span {
     font-size: 16px;
   }
-  .button_main {
+  .button__main {
     font-size: 16px;
     width: 100%;
     max-width: 285px;

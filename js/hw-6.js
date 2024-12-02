@@ -101,7 +101,7 @@
 
 function simpleQuiz() {
   const quiz = [
-      {
+      { 
           question: "Какой цвет небо?",
           options: ["1. Красный", "2. Синий", "3. Зеленый"],
           correctAnswer: 2,

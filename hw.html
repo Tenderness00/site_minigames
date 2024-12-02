@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Welcome to our website</h1>
+    <button class="but">Кнопка</button>
+    <p class="text">Lorem ipsum dolor sit.</p>
+    <button class="btn">Кнопка</button>
+    <h1 class="title_but">Текст заголовка</h1>
+    <button class="text_but">Изменить текст</button>
+    <p class="description">Lorem, ipsum dolor.</p>
+    <p class="description">Lorem, ipsum dolor.</p>
+    <button class="new_element">Добавить элемент</button>
+    <div class="tex"></div>
+    <button class="btn-remove">Удалить элемент</button>
+
+    <script>
+        const titleEl = document.querySelector('.title');
+        const butEl = document.querySelector('.but');
+        const btnEl = document.querySelector('.btn');
+        const textEl = document.querySelector('.text');
+        const titleButEl = document.querySelector('.title_but');
+        const textButEl = document.querySelector('.text_but');
+        const descriptionEl = document.querySelector('.description');
+        const newElementEl = document.querySelector('.new_element');
+        const contentEl = document.querySelector('.tex');
+        const btnRemoveEl = document.querySelector('.btn-remove');
+
+
+        // 1 задание
+
+        butEl.addEventListener('click', () => {
+            title = document.querySelector('h1');
+            titleEl.remove();
+        });
+
+
+        // 2 задание 
+
+        btnEl.addEventListener('click', () => {
+            textEl.textContent = 'Новый текст после клика'
+            textEl.style.color = 'blue';
+        });
+
+
+        // 3 задание 
+        textButEl.addEventListener('click', function() {
+        titleBut = document.getElementById('.title_but');
+        titleButEl.textContent = 'Привет, мир!'
+
+        });
+
+
+        // 4 задание 
+
+        const allDescriptions = document.querySelectorAll('.description');
+
+        console.log(allDescriptions);
+
+        allDescriptions.forEach((description) => {
+            description.textContent = 'Измененный текст';
+        });
+
+
+        // 6 задание
+
+
+        newElementEl.addEventListener('click', () => {
+            const texEl = document.createElement('p')
+            texEl.textContent = 'Новый абзац';
+            texEl.classList.add('tex');
+            contentEl.appendChild(texEl);
+        });
+
+
+
+        // 7 задание
+
+        btnRemoveEl.addEventListener('click', () => {
+            description = document.querySelector('p');
+            descriptionEl.remove();
+            });
+
+
+    </script>
+</body>
