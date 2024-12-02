@@ -354,6 +354,7 @@ body {
   height: 90px;
   overflow: hidden;
   position: relative;
+  margin-top: 156px;
 }
 .stripe__text {
   font-family: Montserrat;
