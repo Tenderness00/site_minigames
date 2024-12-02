@@ -15,7 +15,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 700px;
 }
 
 .top {
@@ -73,23 +72,21 @@ body {
   font-weight: 600;
 }
 
-.button__main {
+.button-main {
   width: 247px;
   height: 66px;
-  padding: 16px 28px;
-  gap: 10px;
   border-radius: 60px;
-  border: 1px;
-  opacity: 0px;
   border: 1px solid #202027;
   background: #202027;
-  color: #FFFFFF;
-  font-family: Montserrat;
+}
+.button-main__text {
   font-size: 24px;
   font-weight: 600;
   line-height: 34.01px;
   text-align: center;
+  color: #FFFFFF;
   text-decoration: none;
+  font-family: Montserrat;
 }
 
 .button__main:hover {
