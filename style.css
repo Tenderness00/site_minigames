@@ -78,8 +78,6 @@ body {
   border-radius: 60px;
   border: 1px solid #202027;
   background: #202027;
-}
-.button-main__text {
   font-size: 24px;
   font-weight: 600;
   line-height: 34.01px;
@@ -87,9 +85,12 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button__main:hover {
+.button-main:hover {
   color: black;
   background: #FFFFFF;
   transition: 1s;
