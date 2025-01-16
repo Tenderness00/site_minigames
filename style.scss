@@ -3,21 +3,12 @@
     padding: 0px;
 }
 
-// body {
-//     font-optical-sizing: auto;
-//     font-style: normal;
-// }
-
-
 body {
-    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
-  }
+}
   
-
-.header {
+header {
     background: #E1FF8F;
     font-optical-sizing: auto;
     background-image: url(img/Group1.svg);
@@ -26,12 +17,9 @@ body {
     background-position: center;
 }
 
-
-
 .top {
     width: 769px;
     padding-top: 196px;
-    padding-left: 120px;
 }
 
 .game-content__position{
@@ -128,8 +116,9 @@ body {
 }
 
 .content {
-    width: 1201px;
+    // width: 1201px;
     padding-left: 120px;
+    // padding-right: 120px;
 }
 
 .container {
