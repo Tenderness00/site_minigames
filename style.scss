@@ -3,10 +3,19 @@
     padding: 0px;
 }
 
+// body {
+//     font-optical-sizing: auto;
+//     font-style: normal;
+// }
+
+
 body {
+    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
+    font-weight: weight;
     font-style: normal;
-}
+  }
+  
 
 .header {
     background: #E1FF8F;
@@ -423,8 +432,7 @@ body {
             }
         }
 }
-
-
-
-
+@import 'tablet';
 @import 'mobile';
+
+
