@@ -1,27 +1,46 @@
 * {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
-.header {
+body {
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
   background: #E1FF8F;
   font-optical-sizing: auto;
   background-image: url(img/Group1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 800px;
 }
 
 .top {
   width: 769px;
   padding-top: 196px;
-  padding-left: 120px;
+}
+
+.game-content__position {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .title {
   font-family: Montserrat;
   font-size: 64px;
+}
+
+.line-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.6px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #202027;
 }
 
 .tagline {
@@ -33,6 +52,17 @@
   margin-top: 24px;
   margin-bottom: 48px;
 }
+.tagline__games {
+  text-align: left;
+  color: #FFFFFF;
+  width: 788px;
+  height: 96px;
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: 32px;
+  padding-bottom: 72px;
+  margin-top: 24px;
+}
 
 .span {
   font-family: Montserrat;
@@ -41,25 +71,25 @@
   font-weight: 600;
 }
 
-.button_main {
+.button-main {
   width: 247px;
   height: 66px;
-  padding: 16px 28px;
-  gap: 10px;
   border-radius: 60px;
-  border: 1px;
-  opacity: 0px;
   border: 1px solid #202027;
   background: #202027;
-  color: #FFFFFF;
-  font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
   line-height: 34.01px;
   text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button_main:hover {
+.button-main:hover {
   color: black;
   background: #FFFFFF;
   transition: 1s;
@@ -67,6 +97,7 @@
 
 .main_games {
   background: #202027;
+  transition: background 0.3s ease;
   gap: 48px;
   background-image: url(img/Group2.svg);
   background-repeat: no-repeat;
@@ -77,28 +108,16 @@
   font-size: 64px;
   font-weight: 700;
   line-height: 78.02px;
-  text-align: left;
   color: #FFFFFF;
   padding-top: 94px;
 }
 
-.tagline_games {
-  text-align: left;
-  color: #FFFFFF;
-  width: 788px;
-  height: 96px;
-  font-family: Montserrat;
-  font-size: 24px;
-  line-height: 32px;
-}
-
 .content {
-  width: 1201px;
-  height: 198px;
+  padding-left: 120px;
 }
 
 .container {
-  margin-bottom: 72px;
+  width: auto;
 }
 
 .cart-box {
@@ -219,8 +238,8 @@
 }
 
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-left: calc(50% - 720px);
+  padding-right: calc(50% - 720px);
 }
 
 .mini-game {
@@ -228,8 +247,36 @@
   background-image: url(img/Group3.svg);
   background-repeat: no-repeat;
 }
+.mini-game__box-title {
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78.02px;
+  text-align: left;
+  color: #FFFFFF;
+  padding-top: 96px;
+  margin-bottom: 72px;
+  padding-left: 120px;
+}
+.mini-game__box {
+  padding-bottom: 112px;
+}
 
 .game-container {
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  width: 600px;
+  height: 500px;
+  width: 1200px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.1294117647);
+}
+
+.game-container__bottom {
   display: flex;
   background-color: white;
   border-radius: 30px;
@@ -247,23 +294,7 @@
   width: 600px;
   margin: 48px;
 }
-
-.mini-game_box {
-  padding-bottom: 112px;
-}
-
-.mini-game_box-title {
-  font-family: Montserrat;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 78.02px;
-  text-align: left;
-  color: #FFFFFF;
-  padding-top: 96px;
-  margin-bottom: 72px;
-}
-
-.game-content_title {
+.game-content__title {
   font-family: Montserrat;
   font-size: 48px;
   font-weight: 700;
@@ -271,8 +302,7 @@
   text-align: left;
   color: #202027;
 }
-
-.game-content_text {
+.game-content__text {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 400;
@@ -301,15 +331,8 @@
 
 .footer {
   background: #BDED35;
-  width: 1441px;
-  height: 150px;
-  top: 5770px;
-  gap: 0px;
-  opacity: 0px;
-  /* padding-top: 61px; */
 }
-
-.footer_text {
+.footer__text {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
@@ -317,4 +340,227 @@
   text-align: center;
   color: #000000;
   padding: 61px 0px;
+}
+
+.stripe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #BCEC30;
+  height: 90px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 156px;
+}
+.stripe__text {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: sans-serif;
+  padding-top: 24px;
+  white-space: nowrap;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.stripe__img {
+  width: 36px;
+  height: 36px;
+  padding: 24px;
+}
+.stripe__frame {
+  display: flex;
+  width: 148%;
+  height: 90px;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee1 10s infinite linear;
+}
+.stripe__frame2 {
+  display: flex;
+  width: 148%;
+  height: 90px;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee2 10s infinite linear;
+}
+@keyframes marquee1 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 1248px) {
+  .main_games {
+    display: none;
+  }
+  .game-container {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .game-container__bottom {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .top {
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .title {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  .tagline {
+    font-size: 16px;
+    width: auto;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;
+  }
+  .span {
+    font-size: 16px;
+  }
+  .mini-game__box-title {
+    line-height: 48.76px;
+    text-align: center;
+    padding-left: 0%;
+  }
+}
+@media (max-width: 767px) {
+  .title {
+    font-size: 40px;
+    width: auto;
+    text-align: center;
+  }
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart-box {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+  }
+  .tagline {
+    font-size: 16px;
+    width: auto;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;
+  }
+  .span {
+    font-size: 16px;
+  }
+  .button-main {
+    display: flex;
+  }
+  .button__main {
+    font-size: 16px;
+    width: 100%;
+    max-width: 285px;
+    height: 55px;
+    padding: 16px 28px 16px 28px;
+    gap: 10px;
+    border-radius: 60px;
+    border: 1px;
+    text-align: center;
+    line-height: 22.67px;
+  }
+  .main_games {
+    display: none;
+  }
+  .mini-game__box-title {
+    font-size: 40px;
+    line-height: 48.76px;
+    padding-left: 0px;
+  }
+  .mini-game__box {
+    padding-bottom: 5%;
+  }
+  .game_button {
+    width: 100%;
+    max-width: 247px;
+    height: 55px;
+    font-size: 16px;
+    line-height: 22.67px;
+    text-align: center;
+  }
+  
+  .game__img {
+    min-width: 100%;
+  }
+  .game-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .game-container__bottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .game-content {
+    width: auto;
+    margin: 10%;
+  }
+  .game-content__title {
+    font-size: 32px;
+    line-height: 39.01px;
+    text-align: left;
+  }
+  .game-content__text {
+    font-size: 16px;
+    line-height: 19.5px;
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  .footer {
+    width: auto;
+  }
+  .footer__text {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
