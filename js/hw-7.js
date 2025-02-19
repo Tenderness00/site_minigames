@@ -7,7 +7,7 @@ function rockPaperScissors() {
 }
 
 function gameComputer () {
-    const player = prompt("Камень, ножницы, бумага, выбирайте!");
+    const player = prompt("Камень, ножницы, бумага, выбирайте!").toLowerCase();
     const computer = rockPaperScissors();
     alert(`Ответ компьютера ${computer}`);
     const choice = {

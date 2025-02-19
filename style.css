@@ -97,6 +97,7 @@ header {
 
 .main_games {
   background: #202027;
+  transition: background 0.3s ease;
   gap: 48px;
   background-image: url(img/Group2.svg);
   background-repeat: no-repeat;
@@ -524,6 +525,7 @@ header {
     line-height: 22.67px;
     text-align: center;
   }
+  
   .game__img {
     min-width: 100%;
   }
